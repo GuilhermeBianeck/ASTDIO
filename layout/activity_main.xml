@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp">
+
+
+        <TextView
+            android:clickable="true"
+            android:text="FRUTAS"
+            android:background="@drawable/border"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="260dp" />
+
+        <TextView
+
+            android:layout_width="25dp"
+            android:layout_height="310dp" />
+
+        <TextView
+            android:text="Escolha a seção desejada!"
+            android:background="@drawable/border"
+            android:textColor="@android:color/black"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="450dp"
+            android:layout_height="260dp" />
+
+        <TextView
+
+            android:layout_width="25dp"
+            android:layout_height="310dp" />
+
+        <TextView
+            android:clickable="true"
+            android:text="ALMOÇO"
+            android:background="@drawable/border"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="260dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:clickable="true"
+            android:text="Café da Manha"
+            android:background="@drawable/border"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="260dp" />
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="500dp"
+            android:layout_height="180dp" />
+
+        <TextView
+            android:clickable="true"
+            android:text="JANTAR"
+            android:background="@drawable/border"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="260dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
