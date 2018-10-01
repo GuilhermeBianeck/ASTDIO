@@ -28,6 +28,8 @@
         <activity android:name=".MacaActivity"></activity>
         <activity android:name=".MacarraoActivity"></activity>
         <activity android:name=".TangActivity"></activity>
+        <activity android:name=".ComActivity"></activity>
+
     </application>
 
 
