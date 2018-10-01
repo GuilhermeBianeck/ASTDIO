@@ -3,6 +3,9 @@ package com.example.simpsons.test123
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import android.content.Intent
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,6 +15,16 @@ class MainActivity : AppCompatActivity() {
 
         // Example of a call to a native method
         sample_text.text = stringFromJNI()
+
+        val next = findViewById<View>(R.id.ButtonAlm) as Button
+        next.setOnClickListener(object : View.OnClickListener() {
+            fun onClick(view: View) {
+                val myIntent = Intent(view.getContext(), AlmocoActivity::class.java)
+                startActivityForResult(myIntent, 0)
+            }
+
+        })
+
     }
 
     /**
@@ -21,7 +34,6 @@ class MainActivity : AppCompatActivity() {
     external fun stringFromJNI(): String
 
     companion object {
-
         // Used to load the 'native-lib' library on application startup.
         init {
             System.loadLibrary("native-lib")

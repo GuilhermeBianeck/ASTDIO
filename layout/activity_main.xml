@@ -28,6 +28,7 @@
 
         <TextView
             android:clickable="true"
+            android:onClick="onClick"
             android:text="FRUTAS"
             android:background="@drawable/border"
             android:textColor="@android:color/black"
@@ -59,6 +60,8 @@
 
         <TextView
             android:clickable="true"
+            android:onClick="onClick"
+            android:id="@+id/ButtonAlm"
             android:text="ALMOÇO"
             android:background="@drawable/border"
             android:textColor="@android:color/black"
@@ -83,6 +86,7 @@
 
         <TextView
             android:clickable="true"
+            android:onClick="onClick"
             android:text="Café da Manha"
             android:background="@drawable/border"
             android:textColor="@android:color/black"
@@ -100,6 +104,7 @@
 
         <TextView
             android:clickable="true"
+            android:onClick="onClick"
             android:text="JANTAR"
             android:background="@drawable/border"
             android:textColor="@android:color/black"
